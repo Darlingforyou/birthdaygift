@@ -613,6 +613,35 @@
             .carousel-slide p { font-size: 0.9rem; }
             .message-card { padding: 1.5rem; }
         }
+        /* FIX — cake perfect center */
+
+.cake-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-3d {
+    position: relative;
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+/* MOBILE CENTER FIX */
+
+@media (max-width: 700px) {
+
+    .cake-3d {
+        transform: scale(0.85);
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+}
     </style>
 </head>
 <body>
@@ -812,9 +841,14 @@
     knife.style.top = '120px';
     
     function updateDragBounds() {
-        minTop = 100;
-        maxTop = cakeContainer.clientHeight - 85;
-    }
+
+    const cakeRect = cakeContainer.getBoundingClientRect();
+
+    minTop = 80; 
+
+    maxTop = cakeRect.height - 90;
+
+}
     
     knife.addEventListener('mousedown', (e) => {
         if (cutCompleted) return;
