@@ -255,36 +255,41 @@
             height: 280px;
             margin: 0 auto;
         }
-        .cake-layer-bottom {
-            width: 290px;
-            height: 85px;
-            background: #d4a373;
-            border-radius: 20px;
-            position: absolute;
-            bottom: 0;
-            left: 15px;
-            box-shadow: 0 8px 0 #b07d4f;
-        }
-        .cake-layer-middle {
-            width: 260px;
-            height: 80px;
-            background: #e8b88a;
-            border-radius: 16px;
-            position: absolute;
-            bottom: 80px;
-            left: 30px;
-            box-shadow: 0 6px 0 #c99163;
-        }
-        .cake-layer-top {
-            width: 230px;
-            height: 75px;
-            background: #f5cd94;
-            border-radius: 14px;
-            position: absolute;
-            bottom: 155px;
-            left: 45px;
-            box-shadow: 0 5px 0 #ddb07a;
-        }
+.cake-layer-bottom {
+    width: 290px;
+    height: 85px;
+    background: #d4a373;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 8px 0 #b07d4f;
+}
+
+.cake-layer-middle {
+    width: 260px;
+    height: 80px;
+    background: #e8b88a;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 6px 0 #c99163;
+}
+
+.cake-layer-top {
+    width: 230px;
+    height: 75px;
+    background: #f5cd94;
+    border-radius: 14px;
+    position: absolute;
+    bottom: 155px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 0 #ddb07a;
+}
         
         /* Candle with Burning Effect */
         .candle-wrapper {
